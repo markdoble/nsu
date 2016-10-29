@@ -1,0 +1,31 @@
+#
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: northernstartups
+  pool: 5
+  username:
+  password:
+  host: localhost
+
+
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: northernstartups
+  pool: 5
+  username:
+  password:
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: northernstartups
+  pool: 5
+  username:
+  password:
+
+cucumber:
+  <<: *TEST
